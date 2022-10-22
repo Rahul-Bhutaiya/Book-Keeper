@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewData["Title"] = "admin_login";
+    Layout = "~/Views/Shared/_AdminLogin.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="utf-8"> <!-- for encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatible with browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0 ,user-scalable=no">
+    <link rel="shortcut icon" href="~/WhatsApp Image 2022-08-30 at 5.16.41 PM.jpeg" type="image/x-icon"/>
+    <!-- title for project -->
+    <title>Book Keeper</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/user/css/bootstrap/bootstrap.min.css">
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" type="text/css" href="~/user/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/user/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- login section -->
+    <section id="bg-full">
+        <div class="container">
+
+            <!-- LOGO -->
+                <div class="text-center">
+                    <img height="60" width="350" class="img-fluid" src="~/user/images/logo/white-logo.png">
+                </div>
+
+            <!-- LOGO ends -->
+
+            <!-- Login content -->
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 col-12">
+                    <div class="form_container">
+                        <form method="post" asp-action="admin_login" asp-controller="Admin">
+                            <div class="first-line text-center">
+                                <h1>Login</h1>
+                                <p>Enter your email address and password to login</p>
+                            </div>
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password" name="password">
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                <button asp-controller="Home" asp-action="Index" class="btn btn-primary btn-block">Visit Uses-Side</button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Login content ends -->
+        </div>
+    </section>
+    <!-- login section -->
+
+
+    <!-- JQuery -->
+    <script src="~/user/js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="~/user/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    @*<script src="~/user/js/script.js" type="text/javascript"></script>*@
+    <script>
+        setTimeout(function() {
+            $('#loader').fadeOut(500)
+        }, 1000);       
+        $(document).ready(function() {
+                
+            $('.eye-image').click(function () {
+
+                if ($('#password').hasClass('close')) {
+                    $('#password').attr('type', 'text');
+                    $('#password').removeClass('close');
+                } else {
+                    $('#password').attr('type', 'password');
+                    $('#password').addClass('close');
+                }
+
+            })
+    
+        })
+
+    </script>
+
+</body></html>
+

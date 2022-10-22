@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "user_contact";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+ <section id="dashboard">
+        <div class="content-box-md">
+            <div class="container admin_mt">
+                <div class="row buy">
+                    <!-- General heading -->
+                    <div class="col-md-12">
+                        <div class="com-heading">
+                            <h3>User - Who Want To Contact You...</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- General heading Ends -->
+                <!-- heading of table -->
+                
+                <!-- heading of table Ends -->
+                <!-- Table data -->
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id.</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (System.Data.DataRow dr in ViewBag.DataSource.Rows)
+                            {
+                            <tr>
+                                <td>
+                                    @dr["id"].ToString()
+                                </td>
+                                <td>@dr["full_name"].ToString()</td>
+                                <td>@dr["email"].ToString()</td>
+                                <td>@dr["subject"].ToString()</td>
+                                <td>@dr["message"].ToString()</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Table data Ends -->
+            </div>
+        </div>
+    </section>
+ 

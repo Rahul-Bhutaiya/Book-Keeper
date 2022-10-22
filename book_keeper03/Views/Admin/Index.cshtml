@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+   <!-- Dashboard -->
+    <section id="dashboard">
+        <div class="content-box-md">
+            <div class="container admin_mt">
+                <div class="row buy">
+                    <!-- General heading -->
+                    <div class="col-md-12">
+                        <div class="com-heading">
+                            <h3>Dashboard - Published Books</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- General heading Ends -->
+                <!-- heading of table -->
+                
+                <!-- heading of table Ends -->
+                <!-- Table data -->
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sr No.</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Book Type</th>
+                                <th scope="col">Number of Pages</th>
+                                <th scope="col">Selling For</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (System.Data.DataRow dr in ViewBag.DataSource.Rows)
+                            {
+                            <tr>
+                                <td>
+                                    @dr["id"].ToString()
+                                </td>
+                                <td>@dr["title"].ToString()</td>
+                                <td>@dr["category"].ToString()</td>
+                                <td>@dr["author"].ToString()</td>
+                                <td>@dr["date"].ToString()</td>
+                                <td>@dr["book_type"].ToString()</td>
+                                <td>@dr["number_pages"].ToString()</td>
+                                <td>@dr["sell_for"].ToString()</td>
+                                <td>@Html.ActionLink("Delete","delete",new{id=dr["id"].ToString()})</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Table data Ends -->
+            </div>
+        </div>
+    </section>
+ 

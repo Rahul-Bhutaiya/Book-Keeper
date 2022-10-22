@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "paid";
+    Layout = "~/Views/Shared/_Layout_blue.cshtml";
+}
+    <section id="searchnote">
+
+        <!-- up Background photo -->
+        <div id="bg-half" class="image-fluid">
+
+            <!-- heading of page -->
+            <div id="page-heading" class="text-center">
+                <h1>Paid Books</h1>
+            </div>
+        </div>
+        <div class="content-box-md">
+            <div class="container">
+                <div class="filter-note-content">
+
+                    <!-- filtering -->
+                    <div class="filter">
+
+                        <!-- filter note -->
+                        
+                    <!-- heading -->
+                    <div class="filter-heading">
+                        <h4>Paid Books By Admin</h4>
+                    </div>
+                    <!-- all book conatainer -->
+                    <div class="show-all-book flex-nowrap">
+                        <div class="row">
+                            <!-- Book 01 -->
+                            @foreach (System.Data.DataRow dr in ViewBag.DataSource.Rows)
+                            {
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 col-12">
+                                    <div class="one-book-content">
+                                        <img src="~/foodImage/@dr["first_image"].ToString()" alt="BOOK-01" class="img-responsive search-image">
+                                        <div class="book-info">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="book-info-content">
+                                                        <div class="book-title">
+                                                            <h6>@dr["title"].ToString()</h6>
+                                                        </div>
+                                                        <div class="info-list">
+                                                            <ul class="info-list-ul">
+                                                                <li><img src="~/user/images/searchnote/university.png"><span>@dr["category"].ToString()</span></li>
+                                                                <li><img src="~/user/images/searchnote/pages.png"><span>@dr["author"].ToString()</span></li>
+                                                                <li><img src="~/user/images/searchnote/date.png"><span>@dr["date"].ToString()</span></li>
+                                                                <li><img src="~/user/images/searchnote/pages.png"><span>@dr["description"].ToString()</span></li>
+                                                                <li class="l-list"><img src="~/user/images/searchnote/flag.png">@dr["sell_for"].ToString()</li>                                                                
+                                                            </ul>
+                                                        </div>
+                                                        <div class="book-title">
+                                                            <h6>@Html.ActionLink("Read","Book",new{bookname=dr["book_name"].ToString()})</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

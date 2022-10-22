@@ -1,0 +1,219 @@
+﻿
+@{
+    ViewData["Title"] = "add_notes";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+    <script type="text/javascript">
+        function showpreview(input) {
+
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('imgpreview').src=e.target.result;
+                    document.getElementById('uploadpic').style.display = 'none';
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+
+        }
+        function countPages(input){
+            var reader = new FileReader();
+            reader.readAsBinaryString(input.files[0]);
+            reader.onloadend = function(){
+                var count = reader.result.match(/\/Type[\s]*\/Page[^s]/g).length;
+                document.getElementById('numofpage').value = count;
+                console.log('Number of Pages:',count );
+            }
+        }
+        function setFreePaid(element){
+             console.log('Number of Pages:',element.checked, element.value);
+
+            if (element.checked && element.value == "free") {
+                document.getElementById('sellprice').style.display = 'none';
+                document.getElementById('sellpricetxt').style.display = 'none';
+            } else { 
+                 document.getElementById('sellprice').style.display = 'block';
+                 document.getElementById('sellpricetxt  ').style.display = 'block';
+            }
+        }
+
+    </script>
+    <section id="addnotes">
+        <!-- up Background photo -->
+        <div id="bg-half" class="image-fluid">
+            <!-- heading of page -->
+            <div id="page-heading" class="text-center">
+                <h1>Add a New Book</h1>
+            </div>
+        </div>
+        <style>
+            form{
+                color: black;
+            }
+        </style>
+         <form method="post" enctype="multipart/form-data">
+        <div class="content-box-md">
+            <div class="container">
+
+                <!-- General heading -->
+                <div class="general-heading" id="user-detail-01">
+                    <h3>Basic Book Details</h3>
+                </div>
+               
+                <div class="user-p">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input name="title" type="text" class="form-control" id="title" placeholder="Enter your book title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="category">Category</label>
+                                        <select name="category" class="dropdown-icon form-control" id="ddg">
+                                            <option  selected>Select your category</option>
+                                            @foreach (System.Data.DataRow dr in ViewBag.DataSource.Rows)
+                                            {
+                                                <option class="ddlist">@dr["category_name"].ToString()</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <label for="title">Author</label>
+                                    <input name="author" type="text" class="form-control" id="title" placeholder="Enter Author Name ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <label for="title">Publishing Date</label>
+                                    <input name="date" type="text" class="form-control" id="title" placeholder="Enter Date of Publishing ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="profilepic">Display Picture</label>
+                                        <div class="upload text-center">
+                                            <input name="display_image" type="file" id="fileimage" accept="image/*" onchange="showpreview(this);">
+                                            <label class="file  text-center" for="fileimage" >
+                                                <img id="imgpreview" width="50" height="50" src="~/admin/images/User-Profile/upload.png">
+                                                <p id="uploadpic">Upload a Picture</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="profilepic">Upload Notes</label>
+                                        <div class="upload text-center">
+                                            <input name="note" type="file" id="filepdf" accept="application/pdf" onchange="countPages(this);">
+                                            <label class="file  text-center" for="filepdf">
+                                                <img id="pdfpreview" src="~/admin/images/User-Profile/upload-note.png">
+                                                <p>Upload a PDF</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="type">Type</label>
+                                        <select name="type" class="dropdown-icon form-control" id="ddg">
+                                            <option selected disabled>Select your Book type</option>
+                                            <option class="ddlist">Soft Coppy</option>
+                                            <option class="ddlist">Handwritten</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="no-of-page">Number of Pages</label>
+                                        <input name="num_page" type="number" class="form-control" id="numofpage" placeholder="Enter number of Book pages">
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="desc">Description</label>
+                                        <input name="description" type="text" class="form-control" id="desc" placeholder="Enter Book description">
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="general-heading" id="user-detail-03">
+                    <h3>Selling Information</h3>
+                </div>
+                <div class="user-p" id="user-detail-03">
+                    <div class="row">
+                        <div class="col-md-6 col-sd-6 ">
+                            <div class="radio-content">
+                                <div>
+                                    <label>Sell For * </label>
+                                </div>
+
+                                <div class="radio-item ">
+                                    <input type="radio" name="role" id="free" value="Free" onClick="setFreePaid(this)">
+                                </div>
+
+                                <label class="role" for="free">Free</label>
+                                <div class="radio-item">
+                                    <input type="radio" name="role" id="paid" value="Paid" onClick="setFreePaid(this)">
+                                </div>
+
+                                <label class="role" for="paid">Paid</label>
+                            </div>
+                             
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+
+                        </div>
+                        <div class="col-md-12">
+                            
+                            <button id="btn-user" type="submit" class="btn btn-primary btn-head">Publish</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </section>
+

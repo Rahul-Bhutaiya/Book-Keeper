@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "subscribe";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="utf-8"> <!-- for encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatible with browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- title for project -->
+    <title>Book Keeper</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/user/css/bootstrap/bootstrap.min.css">
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" type="text/css" href="~/user/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/user/css/responsive.css">
+
+</head>
+
+<body>
+
+    <section id="bg-full">
+
+        <div class="container">
+
+            <div>
+                <div class="text-center">
+                    <img height="120" width="350"src="~/user/images/logo/white-logo.png">
+                </div>
+            </div>
+
+            <div class="row justify-content-center logo-resize">
+                <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12">
+                    <div class="form_container">
+                        <form method="post" asp-action="subscribe" asp-controller="Home" autocomplete="off">
+                            <div class="first-line text-center">
+                                <h1>Take A Subscription</h1>
+                                <p>Enter your details to Subscribe...!</p>
+                            </div>
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <label for="fname">First Name *</label>
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter your first name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname">Last Name *</label>
+                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter your last name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Enter Email Used at Login Time * @ViewBag.message</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-primary btn-block">Pay Just ₹499</button>
+                                <div class="link-for-registration">
+                                    <p class="text-center">Already have an account?<a asp-controller="Home" asp-action="login"> Login</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JQuery -->
+    <script src="~/user/js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="~/user/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    
+</body>
+</html>

@@ -1,0 +1,1295 @@
+/*===============================================================================
+                            Bootstrape 4.5 Media Queries
+=================================================================================*/
+
+
+/* =======================================================================
+                        LOGO, navbar, button
+==========================================================================*/
+@media (max-width:1300px) {
+
+    /*-------LOGO------*/
+    .navbar-brand img {
+        height: 35px;
+        width: 220px;
+    }
+
+    /*-----Buttons----*/
+    #btn-user {
+        width: 130px;
+        height: 35px;
+    }
+
+    /*---- General Headings------*/
+    .general-heading h3 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    /*---------navbar----------*/
+    .navbar {
+        height: 80px;
+    }
+
+    /*---------bg-half--------*/
+    #bg-half {
+        margin-top: 80px;
+    }
+
+    /*----navbar anchor tag----*/
+    ul.navbar-nav > li > a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+
+
+    /*-----navbar resize -------*/
+    .navbar-brand img {
+        height: 25px;
+        width: 160px;
+    }
+
+    /*-------Submit button(all form) --------*/
+    #btn-user {
+        width: 100px;
+        height: 30px;
+    }
+
+
+}
+
+/*---mobile nav btn open----*/
+
+@media(max-width:991px) {
+    #mobile-nav-open-btn {
+        display: block;
+    }
+
+    .navbar-header {
+        position: relative;
+        width: 100%;
+    }
+
+}
+
+/*-------Submit button(all form) --------*/
+#btn-user-p {
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    line-height: 22px;
+}
+
+
+/* =======================================================================
+                All pages
+==========================================================================*/
+@media (max-width: 1300px) {
+
+    /*--------form style--------*/
+    .form_container {
+        padding: 40px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    #check {
+        margin-bottom: 25px;
+    }
+
+    #rememberme {
+        margin-top: 10px;
+    }
+
+    .first-line p {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 18px;
+    }
+
+
+    .eye-image {
+        margin-left: 0;
+        margin-top: -25px;
+        width: 35px;
+        height: 13px;
+    }
+
+    .form-content .form-group label,
+    .radio-content h6,
+    .radio-content label,
+    .fp,
+    #rememberme,
+    .link-for-registration p,
+    .link-for-registration a {
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .form-control,
+    #search {
+        height: 35px;
+        font-size: 12px;
+
+    }
+
+    button.btn {
+        height: 35px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /*---------Add note---------*/
+    .note-pre {
+        height: 120px;
+    }
+
+    /*---------FAQ--------------*/
+    .panel-title a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .panel-body p {
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+
+    /*---------Review popup---------*/
+    #modal2 {
+        margin-top: 110px;
+    }
+}
+
+/* ----------------------large Devices---------------------*/
+@media (max-width: 1200px) {
+
+    /*--------Search note--------*/
+    select.site-input {
+        margin-bottom: 20px;
+    }
+
+    .filter-heading h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #search {
+        padding-left: 45px;
+    }
+
+    .book-info-content {
+        margin: 15px;
+    }
+
+    .book-title h6 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .info-list {
+        margin: 15px 0 10px 0;
+    }
+
+    .info-list ul li img {
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .info-list ul li {
+        padding-bottom: 5px;
+    }
+
+    .info-list ul li span,
+    .show-rating label {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /*---- Common heading ----*/
+    .com-heading h3 {
+        font-size: 30px;
+        line-height: 22px;
+    }
+
+    .buy2,
+    .com-heading {
+        height: 35px;
+    }
+
+    /*-----Search box----*/
+    #search2 {
+        height: 35px;
+        width: 250px;
+        padding-left: 35px;
+    }
+
+    /*--------btn--------*/
+    #btn-buy {
+        font-size: 14px;
+        line-height: 18px;
+        height: 35px;
+        width: 90px;
+    }
+
+
+    /*-------Table font-------*/
+    .table thead tr th,
+    .table tbody tr td,
+    .table tbody tr th,
+    .dropdown ul li a.dropdown-item {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .table tbody tr td img.eye-img {
+        height: 12px;
+        width: 23px;
+    }
+
+    /*-------more menu--------*/
+    a#three-dot-button > span img {
+        height: 15px;
+        width: 3px;
+    }
+
+    /*---- search icon ----*/
+    .search-icon {
+        background-position: left 10px center;
+        background-size: 13px;
+    }
+
+    /*---- Kebab menu ----*/
+    .dropdown-item {
+        height: 25px;
+    }
+}
+
+/* ----------------------Large Devices---------------------*/
+@media (max-width: 1100px) {
+
+    /*------------Add note-------------*/
+    .radio-item input[type='radio'] {
+        width: 25px;
+        height: 25px;
+    }
+
+    .radio-item input[type='radio']:before {
+        width: 12px;
+        height: 12px;
+        margin: 5px;
+    }
+
+    .radio-content label {
+        margin-top: -15px;
+        margin-right: 25px;
+    }
+
+
+    .note-pre {
+        height: 110px;
+    }
+}
+
+/* ----------------------medium Devices---------------------*/
+@media (max-width: 991px) {
+
+    /*---------FAQ--------------*/
+    .panel-title a {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .panel-body p {
+        font-size: 12px;
+        line-height: 14px;
+
+    }
+}
+
+/* ----------------------small Devices---------------------*/
+@media (max-width: 768px) {
+
+    /*--------bg-full--------*/
+    #bg-full .container {
+        padding: 10%;
+    }
+
+    /*--------form style--------*/
+    .form_container {
+        padding: 40px;
+    }
+
+    .first-line p {
+        padding-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    #check {
+        margin-bottom: 15px;
+    }
+
+    .first-line p {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 18px;
+    }
+
+    .form-content .form-group label,
+    .radio-content h6,
+    .fp,
+    #rememberme,
+    .radio-content label,
+    .link-for-registration p,
+    .link-for-registration a {
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .fp {
+        margin-bottom: 0;
+    }
+
+    #check_box {
+        width: 25px;
+        height: 25px;
+    }
+
+    #rememberme {
+        padding-top: 8px;
+    }
+
+    .form-control,
+    #search {
+        height: 35px;
+        font-size: 12px;
+
+    }
+
+    button.btn {
+        height: 35px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /*------Contact us------*/
+    #comment {
+        height: 200px;
+    }
+
+    #btn-user {
+        width: 120px;
+        height: 35px;
+    }
+
+    /*---- Common heading ----*/
+    .com-heading h3 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    /*-------Table font-------*/
+    .table thead tr th,
+    .table tbody tr td,
+    .table tbody tr th,
+    .dropdown ul li a.dropdown-item {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /*---- Kebab menu ----*/
+    .dropdown-item {
+        height: 20px;
+    }
+
+}
+
+/* ----------------------Small Devices---------------------*/
+@media (max-width: 575px) {
+
+    /*--------form style--------*/
+    .form_container {
+        padding: 30px;
+    }
+
+    .first-line h1 {
+        font-size: 28px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+
+    .form-control,
+    #search {
+        height: 30px;
+    }
+
+    .eye-image {
+        margin-top: -22px;
+    }
+
+
+    .link-for-registration p {
+        margin-top: 10px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    /*---- Email Verification-----*/
+    #btn-verify {
+        margin-top: 20px;
+    }
+
+    #logo {
+        margin-bottom: 40px;
+    }
+
+    .first-line-email h1 {
+        font-size: 22px;
+        line-height: 26px;
+        padding-bottom: 25px;
+    }
+
+    #content h3 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
+
+    #content p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+
+    /*------Contact us------*/
+    #comment {
+        height: 150px;
+    }
+
+    /*-----Search box----*/
+    #search2 {
+        width: 445px;
+        padding-left: 35px;
+    }
+
+    /*---- Table page -----*/
+    .table-page {
+        margin-top: 80px;
+    }
+
+    /*---- Table page name------*/
+    .com-heading {
+        height: 60px;
+    }
+
+    .com-heading h3 {
+        font-size: 24px;
+    }
+
+    /*------User Profile------*/
+    #phn-profile {
+        margin-bottom: 10px;
+
+    }
+
+    /*---------Review popup---------*/
+    #modal2 {
+        margin-top: 100px;
+    }
+
+    .review-modal {
+        padding: 10px;
+    }
+
+    .modal-head {
+        margin-bottom: 20px;
+    }
+
+    .modal-rating {
+        margin-bottom: 30px;
+    }
+
+    .modal-rating > img {
+        padding: 5px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .bottom-modal-content label {
+        margin-bottom: 10px;
+    }
+
+    .modalinput-tag {
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* ----------------------Extra Small Devices---------------------*/
+@media (max-width: 320px) {
+
+    .form_container {
+        padding: 25px;
+    }
+
+    .first-line h1 {
+        font-size: 22px;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+
+    .first-line p {
+        font-size: 10px;
+        line-height: 16px;
+        padding-bottom: 15px;
+    }
+
+    .form-content .form-group label,
+    .radio-content h6,
+    .fp,
+    #rememberme {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .form-control {
+        height: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .eye-image {
+        margin-top: -20px;
+        height: 10px;
+        width: 30px;
+    }
+
+    #check_box {
+        width: 20px;
+        height: 20px;
+    }
+
+    #rememberme {
+        padding-left: 10px;
+    }
+
+    button.btn {
+        height: 35px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .link-for-registration p,
+    .link-for-registration a {
+        font-size: 12px;
+    }
+
+    .form-control {
+        font-size: 10px;
+    }
+
+    /*---- Email Verification-----*/
+    .emailverify {
+        padding: 20px;
+    }
+
+    #content p {
+        margin-bottom: 10px;
+    }
+
+    /*--------Search note--------*/
+    #search {
+        padding-left: 30px;
+    }
+
+    .book-title {
+        min-height: 51px;
+    }
+
+    /*-----Search box----*/
+    #search2 {
+        height: 30px;
+        width: 200px;
+    }
+
+    /*--------btn--------*/
+    #btn-buy {
+        height: 30px;
+        width: 80px;
+    }
+
+    /*---------FAQ--------------*/
+    #faq > div#bg-half {
+
+        padding: 75px 0;
+    }
+
+}
+
+
+/* =======================================================================
+                            Common 
+==========================================================================*/
+@media (max-width:1300px) {
+
+    /*------ Footer --------*/
+
+    .footer-content {
+        padding: 20px 0;
+    }
+
+    /*---- All page heading -----*/
+    #page-heading h1 {
+        font-size: 40px;
+    }
+
+    /*---- search icon ----*/
+    .search-icon2 {
+        background-position: left 10px center;
+        background-size: 13px;
+    }
+
+    #search {
+        padding-left: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /*---- All page heading -----*/
+    #page-heading h1 {
+        font-size: 36px;
+    }
+
+    /*------ Footer --------*/
+
+    .footer-content {
+        padding: 15px 0;
+    }
+
+
+
+    .general-heading p {
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 40px;
+    }
+
+    /*---- dropdown-icon ----*/
+    .dropdown-icon {
+        background-position: right 7px center;
+        background-size: 10px;
+    }
+
+
+}
+
+@media (max-width: 575px) {
+
+    /*---------- Footer ----------*/
+
+    .footer-item p {
+        font-size: 16px;
+        margin-left: 100px;
+        margin-right: 30px;
+    }
+
+    .footer-item ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-content {
+        padding: 10px 0;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+
+    /*---- All page heading -----*/
+    #page-heading h1 {
+        font-size: 28px;
+    }
+
+    /*---- Rating star ----*/
+    .book-info-content .show-rating .rate:not(:checked) > label {
+        font-size: 20px;
+    }
+
+    /*---- Footer ----*/
+
+    .footer-item p {
+        font-size: 12px;
+        text-align: center;
+        margin-left: 18px;
+    }
+
+
+}
+
+
+/* =======================================================================
+                            home page
+==========================================================================*/
+@media (max-width:1200px) {
+    /*------ home section ------*/
+
+    #home-heading {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #home-p {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+
+    #home-btn-head a {
+        font-size: 15px;
+    }
+
+    .btn-home {
+        width: 120px;
+        height: 35px;
+        padding: 5px 0;
+    }
+
+    /*-----Customer section-----*/
+
+
+    .author-name-des h4,
+    .author-name-des h6 {
+        padding-left: 10px;
+    }
+
+    .author-name-des h4 {
+        font-size: 20px;
+    }
+
+    .author-name-des h6 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .cust-p span > p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:1100px) {
+
+    /*------notedetail---*/
+    .note-head h3 {
+        font-size: 16px;
+
+    }
+
+    .note-content-01 img {
+
+        height: 190px;
+        width: 150px;
+    }
+
+    .note-content-02 p {
+        margin: 0 0 10px 0;
+        font-size: 12px;
+    }
+
+    #btn-modal {
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .notes-info span,
+    .notes-info span > h6 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .rate:not(:checked) > label {
+        font-size: 15px;
+        height: 20px;
+    }
+
+    .rew-p p {
+        font-size: 12px;
+    }
+
+    .per-name h5 {
+        font-size: 14px;
+    }
+
+    .customer-review {
+        padding: 10px;
+    }
+
+    .custmer-inner {
+        padding-left: 50px;
+    }
+
+    .note-bottom {
+        margin-top: 200px;
+
+    }
+}
+
+
+@media (max-width:1024px) {
+
+    /*-----Customer section-----*/
+    .author-name-des h4,
+    .author-name-des h6 {
+        padding-left: 30px;
+    }
+
+    /*---------work section-------*/
+
+    .work-content {
+        min-height: 165px;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    /*------ about section ------*/
+    #about-right p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    #about-right p:first-child {
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    /*---------work section-------*/
+
+    .about .work-content-img {
+        height: 100px;
+        width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about .work-content-img img {
+        padding: 20px;
+    }
+
+    .work-content h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .work-content p {
+        font-size: 13px;
+    }
+
+    .about-item-02 div.work-content p {
+        padding-bottom: 5px;
+    }
+
+    #btn-down {
+        width: 112px;
+        margin-bottom: 40px;
+
+    }
+
+    #btn-sell {
+        width: 110px;
+
+    }
+
+    /*-----Customer section-----*/
+    .author-name-des {
+        min-height: 130px;
+        padding-top: 20px;
+    }
+
+    .author-name-des {
+        padding-top: 10px;
+    }
+
+    .author-name-des h4,
+    .author-name-des h6 {
+        padding-left: 50px;
+    }
+
+
+}
+
+@media (max-width:575px) {
+
+    /*------ home section ------*/
+
+    #home-heading {
+        font-size: 35px;
+    }
+
+    /*------ about section ------*/
+
+    #about-right p:first-child {
+        margin-top: 40px;
+    }
+
+
+    /*-----Customer section-----*/
+
+    #customer .general-heading h3 {
+        padding-left: 15px;
+        font-size: 20px;
+    }
+
+
+    .author-name-des h6 {
+        font-size: 14px;
+    }
+
+    /*-----Note-detail-----*/
+    .note-content-01 img {
+
+        height: 200px;
+        width: 200px;
+    }
+
+    #note-bottom {
+        height: 300px;
+    }
+
+    .note-bottom-right {
+        height: 450px;
+    }
+
+    .custmer-inner {
+        padding-left: 20px;
+    }
+
+
+
+}
+
+@media(max-width:320px) {
+    #home-heading {
+        font-size: 30px;
+    }
+
+    /*-----Customer section-----*/
+    .author-name-des {
+        padding-left: 0;
+        min-height: 0;
+    }
+
+    .author-name-des h4,
+    .author-name-des h6 {
+        padding-left: 0px;
+    }
+
+    .review-cust div > div.show-rating {
+        padding: 0 0;
+    }
+
+
+
+}
+
+
+
+/* =======================================================================
+                            thanks popup
+==========================================================================*/
+@media (max-width: 1400px) {
+    .modal {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:1300px) {
+
+
+    .popup-content {
+        margin-left: 15px;
+        padding-right: 20px;
+        margin-bottom: 0px;
+    }
+
+    .popup-content p {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .popup-head img {
+        height: 55px;
+        width: 55px;
+    }
+
+    .popup-head {
+        padding-top: 20px;
+    }
+
+    .modal-title {
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    /*-------Thanks PopUp------*/
+    .popup-head {
+        padding-top: 15px;
+    }
+
+
+
+
+
+
+    .modal-body div.popup-head > img {
+        margin-bottom: 15px;
+    }
+
+    .popup-content {
+        margin-left: 15px;
+        padding-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .popup-content p {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+
+    .popup-content h5,
+    .popup-content {
+        font-size: 18px;
+    }
+
+
+    .popup-head h5 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:768px) {
+
+    /*-------Thanks PopUp------*/
+    .popup-head {
+        padding-top: 10px;
+    }
+
+    .popup-head img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .modal {
+        margin-top: 80px;
+    }
+
+    .modal-title {
+        margin-bottom: 20px;
+    }
+
+
+    .modal-body div.popup-head > img {
+        margin-bottom: 15px;
+    }
+
+    .popup-content {
+        margin-left: 10px;
+        padding-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .popup-content p {
+        font-size: 12px;
+        margin: 15px 0;
+    }
+
+    .popup-content h5,
+    .popup-content {
+        font-size: 15px;
+    }
+
+
+    .popup-head h5 {
+        font-size: 16px;
+    }
+
+}
+
+/* =======================================================================
+                            dashboard
+==========================================================================*/
+@media(max-width:575px) {
+    .dash h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .box-01 {
+        border-right: none;
+        height: 130px;
+        border-bottom: 1px solid #d1d1d1;
+        padding-left: 20px;
+    }
+
+    .box-02,
+    .box-03,
+    .box-04,
+    .box-05,
+    .box-06 {
+        height: 130px;
+    }
+
+    .dash-left,
+    dash-right2 {
+        padding: 0;
+    }
+
+    .box-04,
+    .box-05,
+    .box-06 {
+        margin-top: 10px;
+    }
+
+    .first-table div > div.search-box,
+    .second-table div > div.search-box {
+        margin-top: 20px;
+    }
+
+    .box-02,
+    .box-03 {
+        padding: 35px 0;
+    }
+}
+
+@media(max-width:320px) {
+    .dash h4 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+}
+
+/* =======================================================================
+                        note detail
+==========================================================================*/
+
+
+
+@media(max-width:575px) {
+    section {
+        margin-top: 80px;
+    }
+
+    .note-head h6 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .notes-info span,
+    .notes-info span > h6 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .notes-info span > h6 {
+        text-align: left;
+    }
+
+    .note-content-02 div p,
+    .notes-info .mark-in span {
+        font-size: 12px;
+    }
+
+    .notes-info .show-rating .rate:not(:checked) > label {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .note-content-02 div h3 {
+        margin-top: 15px;
+    }
+
+    .customer-review {
+        padding: 10px;
+    }
+
+    .per-name h5 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .review-cust div > div.show-rating {
+        padding: 0 66px;
+    }
+
+    .review-cust div > div.show-rating .rate:not(:checked) > label {
+        font-size: 20px;
+    }
+
+
+    .rew-p p {
+        font-size: 12px;
+    }
+}
+
+
+
+/* =======================================================================
+                            Pagination
+==========================================================================*/
+@media (max-width:575px) {
+    .pagination-container ul li {
+        line-height: 28px;
+    }
+
+    .pagination-container ul li.pgno {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .pagination-container ul li.pgno a {
+        font-size: 15px;
+    }
+
+    .pagination-container ul li:first-child {
+        font-size: 15px;
+    }
+
+    .pagination-container ul li:last-child {
+        font-size: 15px;
+    }
+
+}

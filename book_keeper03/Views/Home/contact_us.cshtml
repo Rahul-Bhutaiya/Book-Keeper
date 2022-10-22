@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "contact_us";
+    Layout = "~/Views/Shared/_Layout_blue.cshtml";
+}
+
+    <section id="contactus">
+        <!-- up Background photo -->
+        <div id="bg-half" class="image-fluid">
+            <!-- heading of page -->
+            <div id="page-heading" class="text-center">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+        <div class="content-box-md">
+            <div class="container">
+                <!-- General heading -->
+                <div class="general-heading">
+                    <h3>Get in Touch</h3>
+                    <p>Let us know how to get back to you</p>
+                </div>
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-lg-6 fo">
+                            <form method="post">
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="fullname">Full Name *</label>
+                                        <input name="fname" type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sub">Subject *</label>
+                                        <input name="subject" type="text" class="form-control" id="sub" placeholder="Enter your subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-lg-6 com">
+                                    <div class="form-content">
+                                        <div class="form-group">
+                                            <label for="comment">Message / Questions *</label>
+                                            <input name="message" type="text" class="form-control" id="comment" placeholder="Messages...">
+                                        </div>
+                                    </div>
+                                </div>
+                               <button id="btn-user" type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

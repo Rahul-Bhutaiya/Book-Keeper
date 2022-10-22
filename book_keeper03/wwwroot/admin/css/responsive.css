@@ -1,0 +1,919 @@
+/*===============================================================================================
+                            Bootstrape 4.5 Media Queries
+=================================================================================================*/
+/* =======================================================================
+                Common Device
+==========================================================================*/
+@media (max-width:1400px) {
+    .footer-item.ver p {
+        padding: 0;
+    }
+}
+
+@media (max-width:1300px) {
+
+    /*---- General Headings------*/
+    .general-heading h3 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    /*---- General Buttons------*/
+    #btn-admin-p {
+        width: 180px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /*---- manageType------*/
+    #btn-manage-type {
+        height: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /*---- Navbar------*/
+    #mobile-nav-open-btn {
+        display: block;
+    }
+
+    .navbar-header {
+        position: relative;
+        width: 100%;
+    }
+
+    /*---- Footer------*/
+    .footer-item p {
+        font-size: 12px;
+        line-height: 8px;
+    }
+
+    .footer-item.ver p {
+        padding: 0px 15px 0px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*---- navbar------*/
+    .navbar .navbar-header a > img {
+        height: 30px;
+        width: 200px;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    /*---- Formcontent------*/
+    .form_container {
+        padding: 40px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    .form-control {
+        height: 30px;
+    }
+
+    /*----Forgotpw-----*/
+    .first-line h1 {
+        font-size: 26px;
+        line-height: 18px;
+        padding-bottom: 20px;
+    }
+
+    /*----Moremenu-----*/
+    .dropdown-menu li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /*---- Formcontent------*/
+    .form_container {
+        padding: 30px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    .form-control {
+        height: 30px;
+    }
+
+    /*---forgotpw--*/
+    .first-line h1 {
+        font-size: 28px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+
+    /*---- Footer------*/
+    .footer-item p {
+        line-height: 8px;
+        padding: 0px 180px 0px 100px;
+    }
+
+    .footer-item.ver p {
+        padding-left: 250px;
+    }
+
+    .footer-item {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /*---- navbar------*/
+    .navbar .navbar-header a > img {
+        height: 25px;
+        width: 170px;
+    }
+
+    #mobile-nav ul li a {
+
+
+        font-size: 14px;
+    }
+
+    #mobile-nav ul li {
+        margin-bottom: 10px;
+    }
+
+
+    /*---- Formcontent------*/
+    .form_container {
+        padding: 25px;
+    }
+
+    /*---- Footer------*/
+    .footer-item.ver p {
+        padding: 0px 15px 0px 120px;
+    }
+
+    .footer-item {
+        padding: 5px;
+    }
+
+    .footer-item p {
+        padding: 0px 50px 0px 20px;
+    }
+
+    /*----Forgotpw-----*/
+    .first-line h1 {
+        font-size: 18px;
+        line-height: 18px;
+        padding-bottom: 20px;
+    }
+}
+
+/* =======================================================================
+                Login Page, Sign Up, Forgot Pwd, Change Pwd
+==========================================================================*/
+/* ----------------------large Devices---------------------*/
+@media (max-width:1300px) {
+
+    /*---- Dashbord ----*/
+    #search2 {
+        height: 40px
+    }
+
+    #btn-buy {
+        height: 40px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .ddm .form-control {
+        height: 40px;
+    }
+
+    .table-heading h4 {
+        font-size: 20px;
+    }
+
+    /*---- Dashbord ----*/
+    .info-box h4 {
+        font-size: 24px;
+    }
+
+    .info-box h6 {
+        font-size: 16px;
+    }
+
+    .table thead tr th {
+        font-size: 16px;
+    }
+
+    .table td,
+    .table th {
+        padding: 5px;
+    }
+
+    .table tr td {
+        font-size: 16px;
+    }
+
+    .tabel tr {
+        height: 40px;
+    }
+
+    /*---- Common heading ----*/
+    .com-heading h3 {
+        font-size: 30px;
+        line-height: 22px;
+    }
+
+    .buy2,
+    .com-heading {
+        height: 35px;
+    }
+
+    /*---- manage Admin ----*/
+    #btn-add-admin {
+        height: 40px;
+        font-size: 14px;
+        line-height: 14px;
+        width: 200px;
+    }
+
+    /*------managecategory------*/
+    #btn-manage-country {
+        height: 40px;
+        font-size: 14px;
+        width: 170px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    /*---- Common heading ----*/
+    .com-heading h3 {
+        font-size: 30px;
+        line-height: 22px;
+    }
+
+    .buy2,
+    .com-heading {
+        height: 35px;
+    }
+
+    /* ------Download Notes---------*/
+    #ddg {
+        height: 40px;
+    }
+
+    /* ------Member detail---------*/
+    .member-detail-img > img {
+        min-height: 50px;
+        width: 130px;
+    }
+
+    /*------managecategory------*/
+    #btn-add-category {
+        height: 40px;
+        font-size: 14px;
+        width: 170px;
+    }
+
+    /*------member-detail------*/
+    .m-details-all > div {}
+
+    .m-detail,
+    .com-info-2 {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    /*---- Dashbord ----*/
+    .info-box h4 {
+        font-size: 24px;
+    }
+
+    .info-box h6 {
+        font-size: 14px;
+    }
+
+    /*---- manage Admin ----*/
+    .table thead tr th {
+        font-size: 14px;
+    }
+
+    .table tr td {
+        font-size: 14px;
+    }
+
+    #btn-note-approve,
+    #btn-note-reject,
+    #btn-note-inreview {
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    /*------notedetail---*/
+    .note-head h3 {
+        font-size: 16px;
+
+    }
+
+    .note-content-01 img {
+
+        height: 190px;
+        width: 150px;
+    }
+
+    .note-content-02 p {
+        margin: 0 0 10px 0;
+        font-size: 12px;
+    }
+
+    #btn-modal {
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .notes-info span,
+    .notes-info span > h6 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .rate:not(:checked) > label {
+        font-size: 15px;
+        height: 20px;
+    }
+
+    .rew-p p {
+        font-size: 12px;
+    }
+
+    .per-name h5 {
+        font-size: 14px;
+    }
+
+    .customer-review {
+        padding: 10px;
+    }
+
+    .custmer-inner {
+        padding-left: 50px;
+    }
+
+    .note-bottom {
+        margin-top: 200px;
+
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    /* ------Member detail---------*/
+    .member-detail-img > img {
+        height: 140px;
+        width: 150px;
+    }
+}
+
+/* ----------------------medium Devices---------------------*/
+@media (max-width: 768px) {
+    #bg-full .container {
+        padding: 10%;
+    }
+
+    .first-line p {
+        padding-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    #check {
+        margin-bottom: 15px;
+    }
+
+    /*---- change password------*/
+    .eye-image {
+        margin-top: -22px;
+    }
+
+    .btn {
+        height: 30px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /*------managecategory------*/
+    #btn-add-category {
+        height: 30px;
+        font-size: 14px;
+        width: 170px;
+    }
+
+    /*---- addCategory------*/
+    .form-group label {
+        font-size: 14px;
+    }
+
+    #btn-admin-p {
+        height: 30px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /*---- Common heading ----*/
+    .com-heading h3 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    /*---- Dashbord ----*/
+    .info-box h4 {
+        font-size: 20px;
+    }
+
+    .info-box {
+        padding: 10px;
+    }
+
+    .info-box h6 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .info-box {
+        margin-bottom: 15px;
+        height: 120px;
+    }
+
+    #search2 {
+        height: 30px;
+        width: 200px;
+    }
+
+    #btn-buy {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .ddm .form-control {
+        height: 30px;
+    }
+
+    .table-heading h4 {
+        font-size: 18px;
+    }
+
+    .table thead tr th {
+        font-size: 12px;
+    }
+
+    .table tr td {
+        font-size: 14px;
+    }
+
+    /*---- manage Admin ----*/
+    #btn-add-admin {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .img1,
+    .img2 {
+        padding: 2px;
+        width: 18px;
+        height: 20px;
+    }
+
+    .search-icon {
+        background-size: 14px;
+    }
+
+    /*---- notesunderreview ----*/
+    #ddg {
+        height: 30px;
+    }
+
+    #btn-note-approve,
+    #btn-note-reject,
+    #btn-note-inreview {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    /*------downloadnote--*/
+    #ddg {
+        height: 30px;
+        width: 110px;
+    }
+
+    table tr td > img {
+        height: 15px;
+        width: 20px;
+    }
+
+    /*------forgotpwd--*/
+    .first-line p {
+        padding-bottom: 30px;
+    }
+
+    .first-line p {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 18px;
+    }
+
+    /*------managecategory------*/
+    #btn-manage-country {
+        height: 30px;
+        font-size: 14px;
+        width: 180px;
+    }
+
+    /*------manageType------*/
+    #btn-manage-type {
+        height: 30px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /*------------memberdetail---------------------*/
+    .m-details-all span > h6,
+    .m-details-all span {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+/* ----------------------Small Devices---------------------*/
+@media (max-width: 575px) {
+
+    /*------------memberdetail---------------------*/
+    .m-details-all > div {
+        margin: 0;
+    }
+
+    .com-info-2 {
+        padding: 0;
+    }
+
+    .m-details-all span > h6,
+    .m-details-all span {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .member-detail-img > img {
+        height: 110px;
+        width: 140px;
+    }
+
+    .first-line h1 {
+        font-size: 28px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+
+    .first-line p {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 18px;
+    }
+
+    .form-content .form-group label,
+    .fp,
+    #rememberme,
+    .link-for-registration p,
+    .link-for-registration a {
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .eye-image {
+        margin-left: 0;
+        margin-top: -22px;
+        width: 35px;
+        height: 13px;
+    }
+
+    .fp {
+        margin-bottom: 0;
+    }
+
+    #check_box {
+        width: 25px;
+        height: 25px;
+    }
+
+    #rememberme {
+        padding-top: 8px;
+    }
+
+    button.btn {
+        height: 35px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .link-for-registration p {
+        margin-top: 10px;
+    }
+
+    /*---- addAdmin------*/
+    .dropdown-tag {
+        margin-bottom: 10px;
+    }
+
+    #btn-admin-p {
+        height: 35px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /*---- addCategory------*/
+    #desc {
+        height: 120px;
+    }
+
+    /*---- Common heading ----*/
+    .com-heading h3 {
+        font-size: 24px;
+    }
+
+    /*---- Dashbord ----*/
+    .info-box h4 {
+        font-size: 22px;
+    }
+
+    .info-box h6 {
+        font-size: 16px;
+    }
+
+    .dashboard-search #search2 {
+        width: 290px;
+    }
+
+    .search-icon {
+        background-size: 14px;
+    }
+
+    .ddm .form-control {
+        max-width: 130px;
+    }
+
+    .table thead tr th {
+        font-size: 10px;
+    }
+
+    .table thead tr {
+        padding: 12px;
+    }
+
+    .table tr td {
+        font-size: 12px;
+    }
+
+    /*------Manage Admin-----*/
+    .manage-admin #search-2 {
+        margin-top: 10px;
+    }
+
+    .table tr th:first-child {
+        font-size: 12px;
+    }
+
+    /*---- Myprofile ----*/
+    .num-dropdown {
+        margin-bottom: 10px;
+    }
+
+    .downloadbox {
+        margin-right: 50px;
+    }
+
+    .downloadnotebox {
+        margin-top: 0;
+    }
+
+    .downloadnotebox {
+        padding-right: 185px;
+    }
+
+    .com-heading.ma {
+        margin-bottom: 0;
+    }
+
+    /*------managesystemconfig------*/
+    .upload {
+        height: 80px;
+        margin: 0;
+    }
+
+    .upload label > img {
+        height: 30px;
+    }
+
+    .general-heading h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .download-search #search2 {
+        width: 270px;
+    }
+
+    /*-----Note-detail-----*/
+    .note-content-01 img {
+
+        height: 200px;
+        width: 200px;
+    }
+
+    #note-bottom {
+        height: 300px;
+    }
+
+    .note-bottom-right {
+        height: 450px;
+    }
+
+    .custmer-inner {
+        padding-left: 20px;
+    }
+
+}
+
+/* ----------------------Extra Small Devices---------------------*/
+@media (max-width: 320px) {
+    .first-line h1 {
+        font-size: 22px;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+
+    .first-line p {
+        font-size: 10px;
+        line-height: 16px;
+        padding-bottom: 15px;
+    }
+
+    .form-content .form-group label,
+    .fp,
+    #rememberme {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .form-control {
+        height: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .eye-image {
+        margin-top: -20px;
+        height: 10px;
+        width: 30px;
+    }
+
+    #check_box {
+        width: 20px;
+        height: 20px;
+    }
+
+    #rememberme {
+        padding-left: 10px;
+    }
+
+    button.btn {
+        height: 35px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .link-for-registration p,
+    .link-for-registration a {
+        font-size: 12px;
+    }
+
+    .form-control {
+        font-size: 10px;
+    }
+
+    /*---- addAdmin------*/
+    .dropdown-tag {
+        margin-bottom: 10px;
+    }
+
+    #btn-admin-p {
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /*---- Dashbord ----*/
+    .info-box h4 {
+        font-size: 18px;
+    }
+
+    .info-box h6 {
+        font-size: 14px;
+    }
+
+    .info-box {
+        height: 110px;
+    }
+
+    #search {
+        width: 8px;
+    }
+
+    .ddm .form-control {
+        width: 8px;
+    }
+
+    .dashboard-search #search2 {
+        width: 160px;
+    }
+
+    /* ------ Notes Under Review---------*/
+    #btn-buy {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    /*------downloadnote--*/
+    .rejlabl label {
+        margin-top: 0;
+    }
+
+    #ddg {
+        width: 95px;
+        height: 30px;
+    }
+
+    .dropdown-icon {
+        background-size: 10px;
+        position: right 15px center;
+    }
+
+    .ddg {
+        margin-right: 5px;
+    }
+
+    .downloadnotebox {
+        padding: 0;
+    }
+
+    .dash-search #search2 {
+        width: 185px;
+    }
+
+    .dash-search #btn-buy {
+        width: 95px;
+        font-size: 12px;
+    }
+
+    .table tr th:first-child {
+        font-size: 12px;
+    }
+
+    /*------manageadmin------*/
+    .manage #search2 {
+        width: 200px;
+    }
+
+    .manage {
+        margin-top: 10px;
+    }
+
+    /*------managecategory------*/
+    #btn-add-category {
+        height: 30px;
+        font-size: 14px;
+        width: 180px;
+    }
+}
