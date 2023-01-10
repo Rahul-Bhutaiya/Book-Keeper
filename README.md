@@ -1,5 +1,5 @@
 # Book-Keeper
-BCA Semester-5 Project on Online Book Shoping
+BCA Semester-5 Project on Online Book Shopping
 
 Requirements To Run This Project....
   Visual Studio 2022 with C#.NET support
